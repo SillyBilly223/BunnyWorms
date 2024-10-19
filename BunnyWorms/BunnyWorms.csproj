@@ -1,0 +1,123 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>10.0</LangVersion>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\bunnyworm" />
+	  <None Remove="Resources\Wormbunny_BodyColor.png" />
+	  <None Remove="Resources\Wormbunny_BodyPattern.png" />
+	  <None Remove="Resources\WormBunny_Creature.png" />
+	  <None Remove="Resources\Wormbunny_Ears.png" />
+	  <None Remove="Resources\WormBunny_Exterminaat.png" />
+	  <None Remove="Resources\Wormbunny_eyes.png" />
+	  <None Remove="Resources\Wormbunny_gibs.png" />
+	  <None Remove="Resources\Wormbunny_icon.png" />
+	  <None Remove="Resources\WormBunny_Meaningless.png" />
+	  <None Remove="Resources\Wormbunny_Mouth.png" />
+	  <None Remove="Resources\WormBunny_Xenogacha.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\bunnyworm" />
+	  <EmbeddedResource Include="Resources\Wormbunny_BodyColor.png" />
+	  <EmbeddedResource Include="Resources\WormBunny_Creature.png" />
+	  <EmbeddedResource Include="Resources\WormBunny_Exterminaat.png" />
+	  <EmbeddedResource Include="Resources\Wormbunny_gibs.png" />
+	  <EmbeddedResource Include="Resources\Wormbunny_icon.png" />
+	  <EmbeddedResource Include="Resources\WormBunny_Meaningless.png" />
+	  <EmbeddedResource Include="Resources\Wormbunny_Mouth.png" />
+	  <EmbeddedResource Include="Resources\Wormbunny_Ears.png" />
+	  <EmbeddedResource Include="Resources\Wormbunny_BodyPattern.png" />
+	  <EmbeddedResource Include="Resources\Wormbunny_Eyes.png" />
+	  <EmbeddedResource Include="Resources\WormBunny_Xenogacha.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="BepInEx">
+	    <HintPath>..\..\..\..\Desktop\Steam\steamapps\common\Brutal Orchestra\BepInEx\core\BepInEx.dll</HintPath>
+	  </Reference>
+	  <Reference Include="BrutalAPI">
+	    <HintPath>..\..\..\..\Desktop\Steam\steamapps\common\Brutal Orchestra\BrutalOrchestra_Data\StreamingAssets\mods\BrutalAPI\plugins\BrutalAPI.dll</HintPath>
+	  </Reference>
+	  <Reference Include="DOTween">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\DOTween.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FMODUnity">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\FMODUnity.dll</HintPath>
+	  </Reference>
+	  <Reference Include="FMODUnityResonance">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\FMODUnityResonance.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Marosi.SerializableCollections">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\Marosi.SerializableCollections.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Marosi.Utility">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\Marosi.Utility.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.RuntimeDetour">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\MonoMod.RuntimeDetour.dll</HintPath>
+	  </Reference>
+	  <Reference Include="MonoMod.Utils">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\MonoMod.Utils.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Assembly-CSharp">
+	    <HintPath>..\..\..\..\Desktop\Steam\steamapps\common\Brutal Orchestra\BepInEx\utils\PUBLIC-Assembly-CSharp.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Newtonsoft.Json">
+	    <HintPath>..\..\..\..\Desktop\Steam\steamapps\common\Brutal Orchestra\BrutalOrchestra_Data\Managed\Newtonsoft.Json.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.InputSystem">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\Unity.InputSystem.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Unity.TextMeshPro">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\Unity.TextMeshPro.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AnimationModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.AnimationModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AssetBundleModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.AssetBundleModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.AudioModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.AudioModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.CoreModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.CoreModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ImageConversionModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.ImageConversionModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.InputModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.JSONSerializeModule">
+	    <HintPath>..\..\..\..\Desktop\Steam\steamapps\common\Brutal Orchestra\BrutalOrchestra_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.ParticleSystemModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.ParticleSystemModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.UI.dll</HintPath>
+	  </Reference>
+	  <Reference Include="UnityEngine.UIModule">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\UnityEngine.UIModule.dll</HintPath>
+	  </Reference>
+	  <Reference Include="YarnSpinner">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\YarnSpinner.dll</HintPath>
+	  </Reference>
+	  <Reference Include="YarnSpinner.Compiler">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\YarnSpinner.Compiler.dll</HintPath>
+	  </Reference>
+	  <Reference Include="YarnSpinner.Unity">
+	    <HintPath>..\..\..\..\Desktop\New folder\BO Modding Generic Dependencies\YarnSpinner.Unity.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
